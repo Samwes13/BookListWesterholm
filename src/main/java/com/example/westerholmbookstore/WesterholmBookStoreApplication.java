@@ -8,6 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
 import com.example.westerholmbookstore.domain.bookstorereposity;
+
 import com.example.westerholmbookstore.domain.AppUser;
 import com.example.westerholmbookstore.domain.AppUserRepository;
 import com.example.westerholmbookstore.domain.Book;
@@ -30,6 +31,9 @@ public class WesterholmBookStoreApplication {
             crepository.save(new Category("Drama"));
             crepository.save(new Category("Action"));
             crepository.save(new Category("Sci-fi"));
+            
+            repository.save(new Book("John", "Johnson", "2005","ISB5959595", "12,44€", crepository.findByName("Humor").get(0)));
+            repository.save(new Book("Paul", "Jokela", "2006","ISB5939595", "13,44€", crepository.findByName("History").get(0)));
             
             // Create users: admin/admin user/user
             AppUser user1 = new AppUser("user", "$2a$06$3jYRJrg0ghaaypjZ/.g4SethoeA51ph3UD4kZi9oPkeMTpjKU5uo6", "USER", "user@haagahelia.fi");
