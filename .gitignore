@@ -6,5 +6,4 @@
 # Maven
 log/
 target/
-.env
-/node_modules
+s
