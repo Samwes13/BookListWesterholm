@@ -1,1 +1,1 @@
-web: node index.js
+web: java -jar target/your-app.jar
