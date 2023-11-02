@@ -58,11 +58,16 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
-		<dependency>
-			    <groupId>com.h2database</groupId>
-			<artifactId>h2</artifactId>
-			    
-			</dependency>
+		
+<dependency>
+
+<groupId>mysql</groupId>
+
+<artifactId>mysql-connector-java</artifactId>
+
+<version>8.0.33</version>
+
+</dependency>
 
 
 		<dependency>
@@ -77,13 +82,14 @@
 	</dependencies>
 
 	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-		</plugins>
-	</build>
+    <plugins>
+        <plugin>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-maven-plugin</artifactId>
+        </plugin>
+    </plugins>
+</build>
+
 
 
 </project>
