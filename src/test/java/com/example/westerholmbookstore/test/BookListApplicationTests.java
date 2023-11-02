@@ -1,4 +1,4 @@
-package fi.haagahelia.course;
+package com.example.westerholmbookstore.test;
 
 
 import org.junit.jupiter.api.Test;

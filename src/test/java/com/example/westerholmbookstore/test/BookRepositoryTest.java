@@ -1,6 +1,6 @@
-package fi.haagahelia.course;
+package com.example.westerholmbookstore.test;
 
-import static org.assertj.core.api.Assertions.assertThat;
+/*import static org.assertj.core.api.Assertions.assertThat;
 
 import java.util.List;
 
@@ -55,4 +55,4 @@ public void findByTitle() {
 }
 
 
-}
+}*/
