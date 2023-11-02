@@ -22,10 +22,10 @@
 	
 	<properties>
 		<tomcat.version>8.0.3</tomcat.version>
+		 <java.version>1.8</java.version>
 	</properties>
-
-
-
+	
+	
 
 	<dependencies>
 		<dependency>
