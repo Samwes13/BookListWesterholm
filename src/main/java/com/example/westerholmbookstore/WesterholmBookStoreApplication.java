@@ -18,21 +18,10 @@ import com.example.westerholmbookstore.domain.Category;
 import com.example.westerholmbookstore.domain.CategoryRepository;
 
 
-@SpringBootApplication
-public class WesterholmBookStoreApplication extends SpringBootServletInitializer {
-@Override
-protected SpringApplicationBuilder configure(SpringApplicationBuilder
-application) {
-return application.sources(WesterholmBookStoreApplication.class);
-}
-public static void main(String[] args) throws Exception {
-SpringApplication.run(WesterholmBookStoreApplication.class, args);
-}
-}
 
 
 
-/*
+
 @SpringBootApplication
 public class WesterholmBookStoreApplication {
     private static final Logger log = LoggerFactory.getLogger(WesterholmBookStoreApplication.class);
@@ -65,4 +54,4 @@ public class WesterholmBookStoreApplication {
             }
         };
     }
-} */
+} 
