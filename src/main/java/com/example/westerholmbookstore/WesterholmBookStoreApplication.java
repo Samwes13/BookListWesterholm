@@ -5,6 +5,8 @@ import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 import org.springframework.context.annotation.Bean;
 
 import com.example.westerholmbookstore.domain.bookstorereposity;
@@ -15,6 +17,22 @@ import com.example.westerholmbookstore.domain.Book;
 import com.example.westerholmbookstore.domain.Category;
 import com.example.westerholmbookstore.domain.CategoryRepository;
 
+
+@SpringBootApplication
+public class WesterholmBookStoreApplication extends SpringBootServletInitializer {
+@Override
+protected SpringApplicationBuilder configure(SpringApplicationBuilder
+application) {
+return application.sources(WesterholmBookStoreApplication.class);
+}
+public static void main(String[] args) throws Exception {
+SpringApplication.run(WesterholmBookStoreApplication.class, args);
+}
+}
+
+
+
+/*
 @SpringBootApplication
 public class WesterholmBookStoreApplication {
     private static final Logger log = LoggerFactory.getLogger(WesterholmBookStoreApplication.class);
@@ -47,4 +65,4 @@ public class WesterholmBookStoreApplication {
             }
         };
     }
-} 
+} */
